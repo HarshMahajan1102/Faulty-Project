@@ -11,6 +11,7 @@ function setup() {
   ball.velocityX = 10;  
   paddle = createSprite(350,200,20,100);
   paddle.addImage("paddle",paddleimg)
+  explosion();
 }
 
 function draw() {
@@ -31,8 +32,6 @@ function draw() {
   {
     paddle.y = paddle.y + 20;
   }
-  explosion();
-  
   drawSprites();
   
 }
